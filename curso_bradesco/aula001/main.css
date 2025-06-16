@@ -1,0 +1,55 @@
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background: var(--bg);
+}
+
+ul{
+    font-family: helvetica;
+}
+
+li{
+    list-style: circle;
+}
+
+.list{
+    list-style: square;
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 50px;
+    border-radius: 1px;
+    border: none;
+    color: var(--btnfontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus{
+    outline-style: none;
+}
+
+.light-theme{
+    color: #000;
+    background-color: #00ff00;
+    --btnBg: var(--black);
+    --btnfontColor: var(--white);
+}
+
+:root{
+    --green: #00ff00;
+    --white: #fff;
+    --black: #000;
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnfontColor: var(--black);
+}
